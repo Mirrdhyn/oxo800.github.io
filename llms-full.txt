@@ -1,0 +1,81 @@
+# Denis Leclercq |Cloud & AI Infrastructure Advisor
+# 0x0800 SRL | BCE: BE1021845609 | Liège, Belgium
+# Contact: contact@0x0800.com | https://0x0800.com
+
+## Professional Summary
+
+Denis Leclercq is a Cloud & AI Infrastructure Advisor with 20 years of experience, from bare-metal server rooms to modern cloud-native architectures. He operates through 0x0800 SRL, based in Liège, Belgium, serving clients across Belgium, France, and the EU.
+
+His unique hybrid advantage combines deep physical infrastructure knowledge (datacenter management, network engineering, Linux systems) with modern cloud architecture expertise (AWS, Azure, OVH) and AI integration capabilities (Private AI, LLMOps).
+
+## Core Services
+
+### 1. NIS2 Compliance Audit
+Infrastructure audit delivering continuous compliance verification via Infrastructure-as-Code (IaC) and automated Drift Detection. NIS2 requires demonstrable, continuous compliance |not point-in-time audits. Deliverable: actionable report with remediation roadmap.
+
+### 2. Cloud Drift Detection & Remediation
+Mapping gaps between declared infrastructure state (Terraform/IaC) and actual cloud state across AWS, Azure, and OVH. Cloud Drift is silent |configurations diverge with every manual change and hotfix. Remediation plan delivered within 10 business days.
+
+### 3. Private AI Deployment
+On-premise and VPC-based LLM deployment enabling teams to leverage AI capabilities without exposing sensitive data to public LLM APIs. Addresses Shadow AI risks where engineers send code, configurations, and credentials to public models.
+
+### 4. FinOps Optimization
+Cloud cost analysis, governance, and optimization in a context of energy inflation and budget pressure. Moves FinOps from slide decks to actual execution.
+
+### 5. Sovereign Cloud Architecture
+Multi-cloud and sovereign cloud architectures designed to decouple infrastructure from geopolitical risks. Compliant with European data sovereignty requirements.
+
+## Technical Expertise
+
+- Cloud Platforms: AWS (ECS, Lambda, VPC, Bedrock), Azure, OVH Cloud, Scaleway
+- Infrastructure as Code: Terraform, Ansible
+- Containers & Orchestration: Kubernetes, Docker, ECS Fargate
+- CI/CD & DevSecOps: GitHub Actions, Jenkins, shift-left security
+- Monitoring & Observability: Prometheus, Grafana, CloudWatch, ELK
+- AI/ML: Private AI, LLMOps, RAG architectures, AWS Bedrock
+- Compliance: NIS2, ISO 27001, SOC2, RGPD
+- Networking: BGP, VLAN, Cisco, HAProxy, Nginx
+- Operating Systems: Linux (Debian, RHEL), Proxmox
+- Languages: Python, Go, TypeScript, Bash, C
+
+## Methodology
+
+1. Audit & Mapping: Complete infrastructure assessment |IaC/reality gaps, exposure surface, NIS2/ISO27001 compliance, FinOps analysis.
+2. Architecture & Remediation: Resilient sovereign architecture design. Drift remediation. Private AI deployment if needed. Everything coded, auditable, reproducible.
+3. Transfer & Autonomy: Teams leave autonomous. Operational documentation, secured CI/CD pipelines, monitoring in place. No dependency created |dependency removed.
+
+## Professional Experience
+
+- NRB |Senior Cloud Architect & DevOps Consultant (2024–present, Belgium)
+- FABERNOVEL |Lead Infrastructure & Cloud Engineer (2020–2024, Paris/Remote)
+- Vallendra |CTO & Co-Founder (2018–2020, Paris)
+- Addventa |Technical Consultant / DevSecOps (2017–2018, Paris)
+- Free Infrastructure |Technical Writer (2014–2017, France)
+- PCWorld France |Tech Journalist (2011–2013, France)
+- QOSMOS |Customer Support Engineer (2009–2011, Paris)
+
+## Company Information
+
+- Company: 0x0800 SRL
+- Registration: BCE BE1021845609
+- Location: Liège, Belgium
+- Website: https://0x0800.com
+- Email: contact@0x0800.com
+
+## Social Links
+
+- LinkedIn: https://www.linkedin.com/in/denis-leclercq
+- GitHub: https://github.com/Mirrdhyn
+- Telegram: https://t.me/Mirrdhyn
+
+## Languages
+
+- French: Native
+- English: Professional working proficiency
+
+## Key Differentiators
+
+1. Hybrid expertise: From physical server rooms and BGP networking to cloud-native architectures |understands infrastructure at every layer.
+2. Private AI capability: Deploys and orchestrates private LLM systems that keep data within client environments.
+3. Compliance-first approach: Architectures designed for continuous NIS2/ISO27001 compliance, not retroactive certification.
+4. Independence: No vendor lock-in, no dependency creation. Clients leave autonomous.

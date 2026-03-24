@@ -4,69 +4,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Denis Leclercq @ 0x0800 SRL| Architecte Infra & Expert IA</title>
-  <meta name="description"
-    content="Freelance DevOps, Cloud Architect & AI Integration Specialist. AWS, Kubernetes, RAG, GenAI." />
+
+  <title>Denis Leclercq | Cloud & AI Infrastructure Advisor | NIS2, Private AI, FinOps | 0x0800 SRL</title>
+  <meta name="description" content="Cloud & AI Infrastructure Advisor basé en Belgique. Audits NIS2, Cloud Drift Detection, IA Privée, FinOps. 20 ans d'expertise infrastructure pour DSI et CTO. AWS, Azure, OVH, Terraform." />
+  <meta name="author" content="Denis Leclercq" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://0x0800.com/" />
+  <meta name="geo.region" content="BE-WLG" />
+  <meta name="geo.placename" content="Liège" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Denis Leclercq | Cloud & AI Infrastructure Advisor | 0x0800 SRL" />
+  <meta property="og:description" content="Audits NIS2, Cloud Drift Detection, IA Privée, FinOps. 20 ans d'expertise infrastructure pour DSI et CTO." />
+  <meta property="og:url" content="https://0x0800.com/" />
+  <meta property="og:site_name" content="0x0800 SRL" />
+  <meta property="og:image" content="https://0x0800.com/logo.png" />
+  <meta property="og:locale" content="fr_BE" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Denis Leclercq | Cloud & AI Infrastructure Advisor" />
+  <meta name="twitter:description" content="Audits NIS2, Cloud Drift Detection, IA Privée, FinOps. 20 ans d'expertise." />
+  <meta name="twitter:image" content="https://0x0800.com/logo.png" />
+
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            primary: '#0f172a', // Slate 900
-            secondary: '#1e293b', // Slate 800
-            accent: '#38bdf8', // Sky 400
-            accentDark: '#0ea5e9', // Sky 500
-          },
           fontFamily: {
-            sans: ['Inter', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
           }
         }
       }
     }
   </script>
+
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0f172a;
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #06080f;
       color: #e2e8f0;
     }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: #06080f; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
 
-    /* Custom scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
+    .line-accent {
+      background: linear-gradient(90deg, #0ea5e9 0%, #e97a1f 50%, #0ea5e9 100%);
+      background-size: 400% 100%;
+      height: 2px;
+      animation: spin-line 5s linear infinite;
+    }
+    @keyframes spin-line {
+      0% { background-position: 300% 0; }
+      100% { background-position: -100% 0; }
     }
 
-    ::-webkit-scrollbar-track {
-      background: #0f172a;
+    /* Scroll-triggered pain/solution animation */
+    .pain-block .problem {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
     }
-
-    ::-webkit-scrollbar-thumb {
-      background: #334155;
-      border-radius: 4px;
+    .pain-block .solution {
+      opacity: 0;
+      transform: translate(0, 0);
+      transition: opacity 0.6s ease 0.4s, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.4s;
     }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: #475569;
+    .pain-block.visible .problem {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .pain-block.visible .solution {
+      opacity: 1;
+      transform: translate(40px, 20px);
+    }
+    @media (max-width: 768px) {
+      .pain-block.visible .solution {
+        transform: translate(16px, 12px);
+      }
     }
   </style>
 
-  <link rel="stylesheet" href="/index.css">
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://0x0800.com/#person",
+        "name": "Denis Leclercq",
+        "jobTitle": "Cloud & AI Infrastructure Advisor",
+        "url": "https://0x0800.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Liège", "addressCountry": "BE" },
+        "sameAs": ["https://www.linkedin.com/in/denis-leclercq","https://github.com/Mirrdhyn"],
+        "worksFor": { "@id": "https://0x0800.com/#organization" },
+        "knowsAbout": ["Cloud Architecture","AWS","Azure","OVH","Terraform","NIS2 Compliance","ISO 27001","Private AI","LLMOps","FinOps","DevSecOps","Kubernetes","Cloud Drift Detection","Infrastructure as Code","Sovereign Cloud"]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://0x0800.com/#organization",
+        "name": "0x0800 SRL",
+        "url": "https://0x0800.com",
+        "logo": "https://0x0800.com/logo.png",
+        "founder": { "@id": "https://0x0800.com/#person" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Liège", "addressCountry": "BE" },
+        "taxID": "BE1021845609"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://0x0800.com/#service",
+        "name": "0x0800 Cloud & AI Infrastructure Advisory",
+        "provider": { "@id": "https://0x0800.com/#organization" },
+        "areaServed": ["BE","FR","EU"],
+        "serviceType": ["NIS2 Compliance Audit","Cloud Drift Detection & Remediation","Private AI Deployment","FinOps Optimization","Sovereign Cloud Architecture"],
+        "description": "Audits d'infrastructure, architecture cloud souveraine, déploiement d'IA privée et conformité NIS2 pour DSI et CTO."
+      },
+      { "@type": "WebSite", "@id": "https://0x0800.com/#website", "url": "https://0x0800.com", "name": "0x0800 SRL", "inLanguage": "fr" }
+    ]
   }
-}
-</script>
-  <script type="module" crossorigin src="assets/index-OGuaezkU.js"></script>
+  </script>
+  <script type="module" crossorigin src="/assets/index-BBJB6rKe.js"></script>
 </head>
 
 <body>
   <div id="root"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.2 });
+      document.querySelectorAll('.pain-block').forEach(el => observer.observe(el));
+    });
+  </script>
 </body>
 
 </html>

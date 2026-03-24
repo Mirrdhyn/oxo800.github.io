@@ -1,0 +1,31 @@
+# 0x0800 SRL |Denis Leclercq
+
+> Cloud & AI Infrastructure Advisor | NIS2, Private AI, FinOps, Sovereign Cloud
+
+## About
+
+Denis Leclercq is a Cloud & AI Infrastructure Advisor based in Liège, Belgium, operating through 0x0800 SRL (BCE: BE1021845609). He advises DSI, CTO and engineering teams on resilient sovereign architectures, NIS2/ISO27001 compliance, Cloud Drift remediation, and Private AI deployment.
+
+## Services
+
+- NIS2 Compliance Audit: Infrastructure audit with continuous compliance verification via IaC and Drift Detection.
+- Cloud Drift Detection & Remediation: Mapping gaps between IaC (Terraform) and actual cloud state (AWS, Azure, OVH). Remediation plan in 10 days.
+- Private AI Deployment: On-premise/VPC LLM deployment so teams can use AI without exposing data to public APIs.
+- FinOps Optimization: Cloud cost control in a context of energy inflation and budget pressure.
+- Sovereign Cloud Architecture: Multi-cloud/sovereign cloud architectures decoupled from geopolitical risks.
+
+## Expertise
+
+20 years of infrastructure experience, from bare-metal server rooms to cloud-native architectures. AWS, Azure, OVH, Terraform, Ansible, Kubernetes, CI/CD, DevSecOps.
+
+## Contact
+
+- Email: contact@0x0800.com
+- Website: https://0x0800.com
+- LinkedIn: https://www.linkedin.com/in/denis-leclercq
+- GitHub: https://github.com/Mirrdhyn
+- Location: Liège, Belgium (available remotely across EU)
+
+## Full Profile
+
+For detailed information, see: https://0x0800.com/llms-full.txt
