@@ -33,67 +33,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            mono: ['JetBrains Mono', 'monospace'],
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background-color: #06080f;
-      color: #e2e8f0;
-    }
-    ::-webkit-scrollbar { width: 5px; }
-    ::-webkit-scrollbar-track { background: #06080f; }
-    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
-
-    .line-accent {
-      background: linear-gradient(90deg, #0ea5e9 0%, #e97a1f 50%, #0ea5e9 100%);
-      background-size: 400% 100%;
-      height: 2px;
-      animation: spin-line 5s linear infinite;
-    }
-    @keyframes spin-line {
-      0% { background-position: 300% 0; }
-      100% { background-position: -100% 0; }
-    }
-
-    /* Scroll-triggered pain/solution animation */
-    .pain-block .problem {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .pain-block .solution {
-      opacity: 0;
-      transform: translate(0, 0);
-      transition: opacity 0.6s ease 0.4s, transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.4s;
-    }
-    .pain-block.visible .problem {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .pain-block.visible .solution {
-      opacity: 1;
-      transform: translate(40px, 20px);
-    }
-    @media (max-width: 768px) {
-      .pain-block.visible .solution {
-        transform: translate(16px, 12px);
-      }
-    }
-  </style>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -132,7 +71,8 @@
     ]
   }
   </script>
-  <script type="module" crossorigin src="/assets/index-BBJB6rKe.js"></script>
+  <script type="module" crossorigin src="/assets/index-BeKQozr4.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BONTcP_P.css">
 </head>
 
 <body>
