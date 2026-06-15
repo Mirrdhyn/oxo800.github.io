@@ -1,18 +1,24 @@
 # 0x0800 SRL |Denis Leclercq
 
-> Cloud & AI Infrastructure Advisor | NIS2, Private AI, FinOps, Sovereign Cloud
+> Cloud & AI architect and builder | NIS2, Private AI, Sovereign Cloud, Fractional CTO
 
 ## About
 
-Denis Leclercq is a Cloud & AI Infrastructure Advisor based in Liège, Belgium, operating through 0x0800 SRL (BCE: BE1021845609). He advises DSI, CTO and engineering teams on resilient sovereign architectures, NIS2/ISO27001 compliance, Cloud Drift remediation, and Private AI deployment.
+Denis Leclercq is a Cloud & AI architect and builder based in Liège, Belgium, operating through 0x0800 SRL (BCE: BE1021845609). 20 years of infrastructure, from bare-metal server rooms to sovereign cloud. He advises DSI, CTO and engineering teams on resilient sovereign architectures, NIS2/ISO27001 compliance, Cloud Drift remediation, and private/local AI — and ships his own products (CompliMetric, Hygur).
 
 ## Services
 
 - NIS2 Compliance Audit: Infrastructure audit with continuous compliance verification via IaC and Drift Detection.
 - Cloud Drift Detection & Remediation: Mapping gaps between IaC (Terraform) and actual cloud state (AWS, Azure, OVH). Remediation plan in 10 days.
-- Private AI Deployment: On-premise/VPC LLM deployment so teams can use AI without exposing data to public APIs.
+- Private & Local AI Deployment: On-premise/VPC LLM deployment so teams can use AI without exposing data to public APIs.
 - FinOps Optimization: Cloud cost control in a context of energy inflation and budget pressure.
 - Sovereign Cloud Architecture: Multi-cloud/sovereign cloud architectures decoupled from geopolitical risks.
+- Fractional CTO: Transitional technical leadership — senior architecture and delivery on tap.
+
+## Products
+
+- CompliMetric (https://complimetric.com): Continuous cloud compliance. Scans cloud and IaC, detects drift, produces NIS2/ISO 27001 evidence. SaaS + GitHub Action + MCP server.
+- Hygur (https://hygur.ai): Local-first personal AI. Data stays on your machine, the model comes to it. Local edition and multi-tenant sovereign cloud.
 
 ## Expertise
 

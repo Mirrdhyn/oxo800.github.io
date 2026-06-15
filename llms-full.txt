@@ -1,12 +1,12 @@
-# Denis Leclercq |Cloud & AI Infrastructure Advisor
+# Denis Leclercq |Cloud & AI Architect & Builder
 # 0x0800 SRL | BCE: BE1021845609 | Liège, Belgium
 # Contact: contact@0x0800.com | https://0x0800.com
 
 ## Professional Summary
 
-Denis Leclercq is a Cloud & AI Infrastructure Advisor with 20 years of experience, from bare-metal server rooms to modern cloud-native architectures. He operates through 0x0800 SRL, based in Liège, Belgium, serving clients across Belgium, France, and the EU.
+Denis Leclercq is a Cloud & AI architect and builder with 20 years of experience, from bare-metal server rooms to modern cloud-native and sovereign architectures. He operates through 0x0800 SRL, based in Liège, Belgium, serving clients across Belgium, France, and the EU.
 
-His unique hybrid advantage combines deep physical infrastructure knowledge (datacenter management, network engineering, Linux systems) with modern cloud architecture expertise (AWS, Azure, OVH) and AI integration capabilities (Private AI, LLMOps).
+His hybrid advantage combines deep physical infrastructure knowledge (datacenter management, network engineering, Linux systems) with modern cloud architecture expertise (AWS, Azure, OVH) and AI integration capabilities (private and local AI, LLMOps). He does not only advise — he ships production products: CompliMetric and Hygur.
 
 ## Core Services
 
@@ -24,6 +24,19 @@ Cloud cost analysis, governance, and optimization in a context of energy inflati
 
 ### 5. Sovereign Cloud Architecture
 Multi-cloud and sovereign cloud architectures designed to decouple infrastructure from geopolitical risks. Compliant with European data sovereignty requirements.
+
+### 6. Fractional CTO
+Transitional technical leadership for teams that need senior architecture and delivery on tap, without a full-time hire.
+
+## Products
+
+Built and operated by Denis Leclercq through 0x0800 SRL — proof of delivery, not slideware.
+
+### CompliMetric (https://complimetric.com)
+Continuous cloud compliance SaaS. Scans cloud and IaC, detects drift, and produces NIS2 / ISO 27001 evidence without spreadsheets. Ships with a GitHub Action and an MCP server.
+
+### Hygur (https://hygur.ai)
+Local-first personal AI. Data stays on the user's machine, the model comes to it. Available as a local edition and a multi-tenant sovereign cloud.
 
 ## Technical Expertise
 
