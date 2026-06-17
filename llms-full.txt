@@ -1,71 +1,84 @@
-# Denis Leclercq |Cloud & AI Architect & Builder
+# Denis Leclercq | On-premise & Sovereign AI for Companies
 # 0x0800 SRL | BCE: BE1021845609 | Liège, Belgium
 # Contact: contact@0x0800.com | https://0x0800.com
 
-## Professional Summary
+## Positioning
 
-Denis Leclercq is a Cloud & AI architect and builder with 20 years of experience, from bare-metal server rooms to modern cloud-native and sovereign architectures. He operates through 0x0800 SRL, based in Liège, Belgium, serving clients across Belgium, France, and the EU.
+0x0800 SRL deploys AI agents that run locally inside the company, on the client's own hardware, so that company data never leaves the premises. The market is PME and ETI (SMBs and mid-market companies) in Belgium and France that want agentic AI but do not know what to build or how. The lever is compliance and sovereignty: RGPD is already in force and the EU AI Act applies in phases. The deployed product is Hygur. 0x0800 also supplies the inference hardware (rent or buy) and runs training. Twenty years of infrastructure experience back the delivery.
 
-His hybrid advantage combines deep physical infrastructure knowledge (datacenter management, network engineering, Linux systems) with modern cloud architecture expertise (AWS, Azure, OVH) and AI integration capabilities (private and local AI, LLMOps). He does not only advise — he ships production products: CompliMetric and Hygur.
+## Why local
 
-## Core Services
+Public LLMs read everything they are sent. For an SMB, that means client data, contracts, and know-how transiting through services outside its control. Running the model on-premise removes the leak while keeping the agents. It simplifies the RGPD legal basis (no transfers outside the EU) and makes EU AI Act obligations (use classification, human oversight, traceability) tractable when addressed early.
 
-### 1. NIS2 Compliance Audit
-Infrastructure audit delivering continuous compliance verification via Infrastructure-as-Code (IaC) and automated Drift Detection. NIS2 requires demonstrable, continuous compliance |not point-in-time audits. Deliverable: actionable report with remediation roadmap.
+## Offers and Pricing
 
-### 2. Cloud Drift Detection & Remediation
-Mapping gaps between declared infrastructure state (Terraform/IaC) and actual cloud state across AWS, Azure, and OVH. Cloud Drift is silent |configurations diverge with every manual change and hotfix. Remediation plan delivered within 10 business days.
+All prices are indicative and exclude tax.
 
-### 3. Private AI Deployment
-On-premise and VPC-based LLM deployment enabling teams to leverage AI capabilities without exposing sensitive data to public LLM APIs. Addresses Shadow AI risks where engineers send code, configurations, and credentials to public models.
+### Scoping workshop (entry point)
+One day on site: prioritised use cases on your data, EU AI Act classification, RGPD readiness and technical feasibility, roadmap and quote. From 1,500 EUR, deducted from a deployment if you proceed.
 
-### 4. FinOps Optimization
-Cloud cost analysis, governance, and optimization in a context of energy inflation and budget pressure. Moves FinOps from slide decks to actual execution.
+### Hygur on-premise deployment
+- Pilot: from 5,900 EUR. One use case, one data source, installation and tuning on your hardware, half-day onboarding included.
+- Production: on quote, from 15,000 EUR. Multiple sources and agents, SSO, backup, supervision. Optional EU AI Act conformity file.
 
-### 5. Sovereign Cloud Architecture
-Multi-cloud and sovereign cloud architectures designed to decouple infrastructure from geopolitical risks. Compliant with European data sovereignty requirements.
+### Inference hardware (rent or buy)
+Rental runs 24 months with a purchase option at residual value; updates and support are included.
+- Atelier — AMD Strix Halo, 128 GB unified, small team: buy from 3,900 EUR, rent from 229 EUR per month.
+- Studio — NVIDIA DGX Spark, 128 GB, several agents: buy from 5,500 EUR, rent from 329 EUR per month.
+- Rack — GPU in your own server (RTX 5090 / RTX 6000): from 2,500 EUR plus integration, rent from 149 EUR per month.
 
-### 6. Fractional CTO
-Transitional technical leadership for teams that need senior architecture and delivery on tap, without a full-time hire.
+### Training (intra-company)
+- Half-day from 950 EUR, full day from 1,700 EUR.
+- Catalogue: Generative AI for decision-makers (half-day); Agents on your data, hands-on workshop (full day); EU AI Act and RGPD for your AI projects (half-day).
+
+### Support and maintenance
+- Essentiel: from 149 EUR per month. Hygur and model updates, reactive email support, configuration review on demand.
+- Supervision: from 490 EUR per month. Proactive supervision and alerts, priority support with response commitment, included intervention hours.
+
+### Hygur Cloud (no hardware to manage)
+Sovereign cloud hosted in Europe. Personal from 29 EUR per month, team on quote.
+
+### One-off missions (secondary)
+Cloud audit and drift, sovereign architecture, fractional CTO. Day rate on request.
 
 ## Products
 
-Built and operated by Denis Leclercq through 0x0800 SRL — proof of delivery, not slideware.
+### Hygur (https://hygur.ai)
+Local-first personal AI. Data stays on the user's machine, the model comes to it. This is the product deployed on-premise in companies, available as a local edition and a multi-tenant sovereign cloud.
 
 ### CompliMetric (https://complimetric.com)
 Continuous cloud compliance SaaS. Scans cloud and IaC, detects drift, and produces NIS2 / ISO 27001 evidence without spreadsheets. Ships with a GitHub Action and an MCP server.
 
-### Hygur (https://hygur.ai)
-Local-first personal AI. Data stays on the user's machine, the model comes to it. Available as a local edition and a multi-tenant sovereign cloud.
+Both products are built and operated by Denis Leclercq through 0x0800 SRL: proof of delivery, not slideware.
+
+## Method
+
+1. Scoping: one day on site to map use cases, classify them against the EU AI Act, and check RGPD readiness. Output: roadmap and quote.
+2. Deployment: install Hygur on the client hardware (supplied or existing), connect sources, tune agents. Pilot in a few weeks, then production.
+3. Training and autonomy: train teams on use and operation. Documentation, supervision, maintenance. No dependency created.
 
 ## Technical Expertise
 
-- Cloud Platforms: AWS (ECS, Lambda, VPC, Bedrock), Azure, OVH Cloud, Scaleway
+- On-premise / local AI: local LLM serving, inference hardware sizing, RAG on private data, LLMOps
+- Cloud Platforms: AWS, Azure, OVH, Scaleway
 - Infrastructure as Code: Terraform, Ansible
 - Containers & Orchestration: Kubernetes, Docker, ECS Fargate
 - CI/CD & DevSecOps: GitHub Actions, Jenkins, shift-left security
-- Monitoring & Observability: Prometheus, Grafana, CloudWatch, ELK
-- AI/ML: Private AI, LLMOps, RAG architectures, AWS Bedrock
-- Compliance: NIS2, ISO 27001, SOC2, RGPD
+- Monitoring: Prometheus, Grafana, CloudWatch, ELK
+- Compliance: RGPD, EU AI Act, NIS2, ISO 27001
 - Networking: BGP, VLAN, Cisco, HAProxy, Nginx
 - Operating Systems: Linux (Debian, RHEL), Proxmox
 - Languages: Python, Go, TypeScript, Bash, C
 
-## Methodology
-
-1. Audit & Mapping: Complete infrastructure assessment |IaC/reality gaps, exposure surface, NIS2/ISO27001 compliance, FinOps analysis.
-2. Architecture & Remediation: Resilient sovereign architecture design. Drift remediation. Private AI deployment if needed. Everything coded, auditable, reproducible.
-3. Transfer & Autonomy: Teams leave autonomous. Operational documentation, secured CI/CD pipelines, monitoring in place. No dependency created |dependency removed.
-
 ## Professional Experience
 
-- NRB |Senior Cloud Architect & DevOps Consultant (2024–present, Belgium)
-- FABERNOVEL |Lead Infrastructure & Cloud Engineer (2020–2024, Paris/Remote)
-- Vallendra |CTO & Co-Founder (2018–2020, Paris)
-- Addventa |Technical Consultant / DevSecOps (2017–2018, Paris)
-- Free Infrastructure |Technical Writer (2014–2017, France)
-- PCWorld France |Tech Journalist (2011–2013, France)
-- QOSMOS |Customer Support Engineer (2009–2011, Paris)
+- NRB | Senior Cloud Architect & DevOps Consultant (2024–present, Belgium)
+- FABERNOVEL | Lead Infrastructure & Cloud Engineer (2020–2024, Paris/Remote)
+- Vallendra | CTO & Co-Founder (2018–2020, Paris)
+- Addventa | Technical Consultant / DevSecOps (2017–2018, Paris)
+- Free Infrastructure | Technical Writer (2014–2017, France)
+- PCWorld France | Tech Journalist (2011–2013, France)
+- QOSMOS | Customer Support Engineer (2009–2011, Paris)
 
 ## Company Information
 
@@ -88,7 +101,8 @@ Local-first personal AI. Data stays on the user's machine, the model comes to it
 
 ## Key Differentiators
 
-1. Hybrid expertise: From physical server rooms and BGP networking to cloud-native architectures |understands infrastructure at every layer.
-2. Private AI capability: Deploys and orchestrates private LLM systems that keep data within client environments.
-3. Compliance-first approach: Architectures designed for continuous NIS2/ISO27001 compliance, not retroactive certification.
-4. Independence: No vendor lock-in, no dependency creation. Clients leave autonomous.
+1. Data stays in-house: agents run on the client's own hardware, no data leaves the company.
+2. Compliance-led: RGPD and EU AI Act are the entry point, not an afterthought.
+3. Hardware included: inference machine supplied to rent or buy, sized to the use case.
+4. Builder, not reseller: Hygur and CompliMetric are designed and operated in-house.
+5. Independence: teams leave autonomous after training; no dependency created.

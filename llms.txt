@@ -1,28 +1,26 @@
-# 0x0800 SRL |Denis Leclercq
+# 0x0800 SRL | Denis Leclercq
 
-> Cloud & AI architect and builder | NIS2, Private AI, Sovereign Cloud, Fractional CTO
+> On-premise, sovereign AI for SMBs and mid-market companies | Local agents on your data, RGPD & EU AI Act compliant
 
 ## About
 
-Denis Leclercq is a Cloud & AI architect and builder based in Liège, Belgium, operating through 0x0800 SRL (BCE: BE1021845609). 20 years of infrastructure, from bare-metal server rooms to sovereign cloud. He advises DSI, CTO and engineering teams on resilient sovereign architectures, NIS2/ISO27001 compliance, Cloud Drift remediation, and private/local AI — and ships his own products (CompliMetric, Hygur).
+0x0800 SRL (Denis Leclercq, Liège, Belgium, BCE: BE1021845609) deploys AI agents that run locally inside the company, on the client's own hardware. The data never leaves the premises. The pitch is sovereignty and compliance: RGPD and the EU AI Act, for PME and ETI (SMBs and mid-market) in Belgium and France that want agentic AI but do not know where to start. The deployed product is Hygur. 0x0800 also sells the inference hardware (rent or buy) and training. Backed by 20 years of infrastructure experience.
 
-## Services
+## Offers
 
-- NIS2 Compliance Audit: Infrastructure audit with continuous compliance verification via IaC and Drift Detection.
-- Cloud Drift Detection & Remediation: Mapping gaps between IaC (Terraform) and actual cloud state (AWS, Azure, OVH). Remediation plan in 10 days.
-- Private & Local AI Deployment: On-premise/VPC LLM deployment so teams can use AI without exposing data to public APIs.
-- FinOps Optimization: Cloud cost control in a context of energy inflation and budget pressure.
-- Sovereign Cloud Architecture: Multi-cloud/sovereign cloud architectures decoupled from geopolitical risks.
-- Fractional CTO: Transitional technical leadership — senior architecture and delivery on tap.
+- Scoping workshop (Atelier de cadrage IA): one day on site, use-case prioritisation, EU AI Act classification, RGPD readiness, roadmap and quote. From 1,500 EUR (deducted from a deployment).
+- Hygur on-premise deployment: pilot from 5,900 EUR (one use case, one data source); production on quote, from 15,000 EUR.
+- Inference hardware (rent or buy, 24-month rental with purchase option): AMD Strix Halo (128 GB) from 3,900 EUR / 229 EUR per month; NVIDIA DGX Spark (128 GB) from 5,500 EUR / 329 EUR per month; GPU in your own server (RTX 5090/6000) from 2,500 EUR / 149 EUR per month.
+- Training (intra-company): half-day from 950 EUR, full day from 1,700 EUR.
+- Support & maintenance: Essentiel from 149 EUR per month, Supervision from 490 EUR per month.
+- One-off missions (secondary): cloud audit, sovereign architecture, fractional CTO. Day rate on request.
+
+All prices are indicative and exclude tax.
 
 ## Products
 
-- CompliMetric (https://complimetric.com): Continuous cloud compliance. Scans cloud and IaC, detects drift, produces NIS2/ISO 27001 evidence. SaaS + GitHub Action + MCP server.
-- Hygur (https://hygur.ai): Local-first personal AI. Data stays on your machine, the model comes to it. Local edition and multi-tenant sovereign cloud.
-
-## Expertise
-
-20 years of infrastructure experience, from bare-metal server rooms to cloud-native architectures. AWS, Azure, OVH, Terraform, Ansible, Kubernetes, CI/CD, DevSecOps.
+- Hygur (https://hygur.ai): Local-first personal AI. Data stays on the machine, the model comes to it. The product deployed on-premise in companies. Local edition and multi-tenant sovereign cloud. Hygur Cloud: personal from 29 EUR per month, team on quote.
+- CompliMetric (https://complimetric.com): Continuous cloud compliance. Scans cloud and IaC, detects drift, produces NIS2 / ISO 27001 evidence. SaaS + GitHub Action + MCP server.
 
 ## Contact
 
@@ -30,7 +28,7 @@ Denis Leclercq is a Cloud & AI architect and builder based in Liège, Belgium, o
 - Website: https://0x0800.com
 - LinkedIn: https://www.linkedin.com/in/denis-leclercq
 - GitHub: https://github.com/Mirrdhyn
-- Location: Liège, Belgium (available remotely across EU)
+- Location: Liège, Belgium (serves Belgium, France, EU)
 
 ## Full Profile
 
