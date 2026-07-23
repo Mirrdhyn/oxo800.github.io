@@ -5,26 +5,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Faire tourner vLLM sur un DGX Spark (GB10) : du clone à l'inférence NVFP4 | 0x0800 SRL</title>
-  <meta name="description" content="Installation complète de vLLM sur un DGX Spark GB10 (SM121) : les trois bugs qui bloquent le build et le lancement d'un modèle NVFP4, et comment les corriger." />
+  <title>Servir Laguna S 2.1 NVFP4 sur un DGX Spark (GB10) : le runbook | 0x0800 SRL</title>
+  <meta name="description" content="Runbook vLLM pour servir Laguna S 2.1 NVFP4 (117 Md, MoE) sur un seul DGX Spark GB10 : éviter l'OOM au JIT, contexte 256K, décodage spéculatif DFlash, benchmarks de débit détaillés." />
   <meta name="author" content="Denis Leclercq" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <meta name="theme-color" content="#f7f8fa" />
-  <link rel="canonical" href="https://0x0800.com/article-dgx-spark-vllm-nvfp4.html" />
+  <link rel="canonical" href="https://0x0800.com/article-laguna-s21-single-spark.html" />
   <meta name="geo.region" content="BE-WLG" />
   <meta name="geo.placename" content="Liège" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Faire tourner vLLM sur un DGX Spark (GB10) : du clone à l'inférence NVFP4" />
-  <meta property="og:description" content="Les trois bugs qui bloquent vLLM sur un DGX Spark GB10 (SM121), et comment les corriger, du clone du dépôt au lancement d'un modèle NVFP4." />
-  <meta property="og:url" content="https://0x0800.com/article-dgx-spark-vllm-nvfp4.html" />
+  <meta property="og:title" content="Servir Laguna S 2.1 NVFP4 sur un seul DGX Spark (GB10) : le runbook complet" />
+  <meta property="og:description" content="De la box tuée par son propre JIT au service 256K fonctionnel : runbook complet pour servir Laguna S 2.1 NVFP4 sur un DGX Spark GB10 avec vLLM et décodage spéculatif DFlash." />
+  <meta property="og:url" content="https://0x0800.com/article-laguna-s21-single-spark.html" />
   <meta property="og:site_name" content="0x0800 SRL" />
   <meta property="og:image" content="https://0x0800.com/logo.png" />
   <meta property="og:locale" content="fr_BE" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Faire tourner vLLM sur un DGX Spark (GB10) : du clone à l'inférence NVFP4" />
-  <meta name="twitter:description" content="Les trois bugs qui bloquent vLLM sur un DGX Spark GB10 (SM121), et comment les corriger." />
+  <meta name="twitter:title" content="Servir Laguna S 2.1 NVFP4 sur un DGX Spark (GB10) : le runbook" />
+  <meta name="twitter:description" content="Runbook vLLM pour servir Laguna S 2.1 NVFP4 sur un seul DGX Spark GB10 : hygiène mémoire, contexte 256K, décodage spéculatif DFlash, benchmarks." />
   <meta name="twitter:image" content="https://0x0800.com/logo.png" />
 
   <link rel="icon" type="image/png" href="/logo.png" />
@@ -38,15 +38,15 @@
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Faire tourner vLLM proprement sur un DGX Spark (GB10) : du clone à l'inférence NVFP4",
-    "description": "Installation complète de vLLM sur un DGX Spark GB10 (SM121) : les trois bugs qui bloquent le build et le lancement d'un modèle NVFP4, et comment les corriger.",
+    "headline": "Servir Laguna S 2.1 NVFP4 sur un seul DGX Spark (GB10) : le runbook complet",
+    "description": "Runbook vLLM pour servir Laguna S 2.1 NVFP4 (117 Md, MoE) sur un seul DGX Spark GB10 : éviter l'OOM au JIT, contexte 256K, décodage spéculatif DFlash, benchmarks de débit détaillés.",
     "author": { "@type": "Person", "name": "Denis Leclercq", "url": "https://0x0800.com" },
     "publisher": { "@type": "Organization", "name": "0x0800 SRL", "logo": { "@type": "ImageObject", "url": "https://0x0800.com/logo.png" } },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://0x0800.com/article-dgx-spark-vllm-nvfp4.html" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://0x0800.com/article-laguna-s21-single-spark.html" },
     "inLanguage": "fr"
   }
   </script>
-  <script type="module" crossorigin src="/assets/articleDgxSparkVllmNvfp4-eepW12nA.js"></script>
+  <script type="module" crossorigin src="/assets/articleLagunaS21SingleSpark-esZA0XVQ.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/Contact-D93gou8J.js">
   <link rel="modulepreload" crossorigin href="/assets/CodeBlock-C1nljxn7.js">
   <link rel="stylesheet" crossorigin href="/assets/Contact-DJ794iTG.css">
