@@ -1,45 +1,36 @@
-# Denis Leclercq | On-premise & Sovereign AI for Companies
+# Denis Leclercq | On-premise infrastructure, cloud, and local AI
 # 0x0800 SRL | BCE: BE1021845609 | Liège, Belgium
 # Contact: contact@0x0800.com | https://0x0800.com
 
 ## Positioning
 
-0x0800 SRL deploys AI agents that run locally inside the company, on the client's own hardware, so that company data never leaves the premises. The market is PME and ETI (SMBs and mid-market companies) in Belgium and France that want agentic AI but do not know what to build or how. The lever is compliance and sovereignty: RGPD is already in force and the EU AI Act applies in phases. The deployed product is Hygur. 0x0800 also supplies the inference hardware (rent or buy) and runs training. Twenty years of infrastructure experience back the delivery.
+0x0800 SRL builds and operates infrastructure across three fields treated as a single discipline: on-premise systems, cloud and hybrid platforms, and local AI inference. A rack in a machine room, a cloud account, and an inference box sitting on a desk are three forms of the same work: size it right, automate what repeats, supervise what runs, and leave behind something the client's own teams can take over. Twenty years of infrastructure work back the delivery, from network support to technical direction. The market is companies in Belgium and France, served on site and remotely.
 
-## Why local
+## What we do
 
-Public LLMs read everything they are sent. For an SMB, that means client data, contracts, and know-how transiting through services outside its control. Running the model on-premise removes the leak while keeping the agents. It simplifies the RGPD legal basis (no transfers outside the EU) and makes EU AI Act obligations (use classification, human oversight, traceability) tractable when addressed early.
+### On-premise infrastructure
+Virtualised estates (Proxmox, VMware), networking and BGP routing, high availability, backup and supervision, maintenance in operational condition, redundant databases and front ends, inventory and operational documentation.
 
-## Offers and Pricing
+### Cloud and hybrid
+Scalable and resilient AWS and Azure architectures, migration of on-premise environments to the cloud, infrastructure as code with Terraform and Ansible, CI/CD pipelines with DevSecOps integration, continuous drift detection and compliance evidence.
 
-All prices are indicative and exclude tax.
+### Local AI
+vLLM inference servers and quantised models, memory/thermal/context sizing, agents connected to internal sources, Hygur local edition deployment, team training and handover. Data stays on the client's hardware, which simplifies the RGPD legal basis (no transfers outside the EU) and makes EU AI Act obligations tractable when addressed early.
 
-### Scoping workshop (entry point)
-One day on site: prioritised use cases on your data, EU AI Act classification, RGPD readiness and technical feasibility, roadmap and quote. From 1,500 EUR, deducted from a deployment if you proceed.
+## Pricing
 
-### Hygur on-premise deployment
-- Pilot: from 5,900 EUR. One use case, one data source, installation and tuning on your hardware, half-day onboarding included.
-- Production: on quote, from 15,000 EUR. Multiple sources and agents, SSO, backup, supervision. Optional EU AI Act conformity file.
+Not published. Work is quoted per engagement after an on-site scoping day. Prices are communicated by nominative quote, valid 30 days.
 
-### Inference hardware (rent or buy)
-Rental runs 24 months with a purchase option at residual value; updates and support are included.
-- Atelier — AMD Strix Halo, 128 GB unified, small team: buy from 3,900 EUR, rent from 229 EUR per month.
-- Studio — NVIDIA DGX Spark, 128 GB, several agents: buy from 5,500 EUR, rent from 329 EUR per month.
-- Rack — GPU in your own server (RTX 5090 / RTX 6000): from 2,500 EUR plus integration, rent from 149 EUR per month.
+## Published measurements
 
-### Training (intra-company)
-- Half-day from 950 EUR, full day from 1,700 EUR.
-- Catalogue: Generative AI for decision-makers (half-day); Agents on your data, hands-on workshop (full day); EU AI Act and RGPD for your AI projects (half-day).
+Benchmarks are run on in-house hardware and released with their method, their commands verbatim, and their caveats. What was not verified is stated as such.
 
-### Support and maintenance
-- Essentiel: from 149 EUR per month. Hygur and model updates, reactive email support, configuration review on demand.
-- Supervision: from 490 EUR per month. Proactive supervision and alerts, priority support with response commitment, included intervention hours.
-
-### Hygur Cloud (no hardware to manage)
-Sovereign cloud hosted in Europe. Personal from 29 EUR per month, team on quote.
-
-### One-off missions (secondary)
-Cloud audit and drift, sovereign architecture, fractional CTO. Day rate on request.
+- DeepSeek-V4-Flash on two DGX Spark: the measurements (1 August 2026) — https://0x0800.com/article-deepseek-v4-dual-spark.html
+  A 43-layer, 256-expert model on two desktop boxes. Code quality judged by execution rather than opinion: 95% correct over 100 draws (Python 50/50, Go 45/50), all five failures compile errors and never a wrong business test. Throughput varies with generated content (production floor 46.4 tok/s, 105 tok/s aggregated over two concurrent streams). 877,901 tokens of KV cache. Prefix caching cuts prefill by a factor of 18. No thermal or power throttling over 180 samples, 67 °C worst case, 41 W per box. RDMA latency 1.86 µs typical, latency-bound rather than bandwidth-bound.
+- Serving Laguna S 2.1 NVFP4 on a single DGX Spark (23 July 2026) — https://0x0800.com/article-laguna-s21-single-spark.html
+  A 117.6B-parameter MoE (8.5B active) on one unified-memory box: memory hygiene, native 256K context, DFlash speculative decoding, 738,410 tokens of KV cache at 256K, 49–52 tok/s decode, 252 ms TTFT.
+- Running vLLM properly on a DGX Spark, GB10 (20 July 2026) — https://0x0800.com/article-dgx-spark-vllm-nvfp4.html
+  From cloning vLLM to serving an NVFP4 quantised model: the three bugs that block the build and the first server on SM121 architecture, and how to fix them.
 
 ## Products
 
@@ -49,13 +40,13 @@ Local-first personal AI. Data stays on the user's machine, the model comes to it
 ### CompliMetric (https://complimetric.com)
 Continuous cloud compliance SaaS. Scans cloud and IaC, detects drift, and produces NIS2 / ISO 27001 evidence without spreadsheets. Ships with a GitHub Action and an MCP server.
 
-Both products are built and operated by Denis Leclercq through 0x0800 SRL: proof of delivery, not slideware.
+Both products are edited and operated in-house by 0x0800 SRL.
 
 ## Method
 
-1. Scoping: one day on site to map use cases, classify them against the EU AI Act, and check RGPD readiness. Output: roadmap and quote.
-2. Deployment: install Hygur on the client hardware (supplied or existing), connect sources, tune agents. Pilot in a few weeks, then production.
-3. Training and autonomy: train teams on use and operation. Documentation, supervision, maintenance. No dependency created.
+1. Scoping: one day on site to review the existing setup, the intended use, and the data and compliance constraints. Output: a roadmap and a quote.
+2. Build: installation, migration, or deployment, depending on the engagement — on-premise infrastructure, cloud environment, or an inference server connected to internal sources. A narrow scope first, production second.
+3. Autonomy: documentation, team training, supervision. The client keeps control of what runs on their premises. No dependency created.
 
 ## Technical Expertise
 
@@ -70,7 +61,9 @@ Both products are built and operated by Denis Leclercq through 0x0800 SRL: proof
 - Operating Systems: Linux (Debian, RHEL), Proxmox
 - Languages: Python, Go, TypeScript, Bash, C
 
-## Professional Experience
+## Professional Experience (founder, before and alongside 0x0800)
+
+These roles were held by Denis Leclercq as an employee or consultant, not as engagements contracted by 0x0800 SRL.
 
 - NRB | Senior Cloud Architect & DevOps Consultant (2024–present, Belgium)
 - FABERNOVEL | Lead Infrastructure & Cloud Engineer (2020–2024, Paris/Remote)
@@ -101,8 +94,8 @@ Both products are built and operated by Denis Leclercq through 0x0800 SRL: proof
 
 ## Key Differentiators
 
-1. Data stays in-house: agents run on the client's own hardware, no data leaves the company.
-2. Compliance-led: RGPD and EU AI Act are the entry point, not an afterthought.
-3. Hardware included: inference machine supplied to rent or buy, sized to the use case.
-4. Builder, not reseller: Hygur and CompliMetric are designed and operated in-house.
-5. Independence: teams leave autonomous after training; no dependency created.
+1. One discipline across three fields: on-premise, cloud, and local AI handled by the same hands, so a hybrid estate is not split between three vendors.
+2. Measurements published: benchmarks run on in-house hardware, released with commands, method, and caveats, and reproducible by anyone.
+3. Data stays in-house: models run on the client's own hardware, no data leaves the company.
+4. Editor, not reseller: Hygur and CompliMetric are designed and operated in-house.
+5. Independence: teams are left autonomous after training; no dependency created.

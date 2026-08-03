@@ -5,26 +5,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Servir Laguna S 2.1 NVFP4 sur un DGX Spark (GB10) : le runbook | 0x0800 SRL</title>
-  <meta name="description" content="Runbook vLLM pour servir Laguna S 2.1 NVFP4 (117 Md, MoE) sur un seul DGX Spark GB10 : éviter l'OOM au JIT, contexte 256K, décodage spéculatif DFlash, benchmarks de débit détaillés." />
+  <title>DeepSeek-V4-Flash sur deux DGX Spark : les mesures | 0x0800 SRL</title>
+  <meta name="description" content="Mesures complètes de DeepSeek-V4-Flash sur deux DGX Spark GB10 : 95 % de code juste jugé par exécution sur 100 tirages, 105 tok/s agrégés, 878 k tokens de cache KV, thermique sans bridage et latence RDMA à 1,86 µs." />
   <meta name="author" content="Denis Leclercq" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <meta name="theme-color" content="#f7f8fa" />
-  <link rel="canonical" href="https://0x0800.com/article-laguna-s21-single-spark.html" />
+  <link rel="canonical" href="https://0x0800.com/article-deepseek-v4-dual-spark.html" />
   <meta name="geo.region" content="BE-WLG" />
   <meta name="geo.placename" content="Liège" />
 
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Servir Laguna S 2.1 NVFP4 sur un seul DGX Spark (GB10) : le runbook complet" />
-  <meta property="og:description" content="De la box tuée par son propre JIT au service 256K fonctionnel : runbook complet pour servir Laguna S 2.1 NVFP4 sur un DGX Spark GB10 avec vLLM et décodage spéculatif DFlash." />
-  <meta property="og:url" content="https://0x0800.com/article-laguna-s21-single-spark.html" />
+  <meta property="og:title" content="DeepSeek-V4-Flash sur deux DGX Spark : les mesures" />
+  <meta property="og:description" content="Ce qu'un modèle de 43 couches et 256 experts donne sur deux boîtiers de bureau : qualité du code jugée par exécution, débit selon le contenu, capacité en sessions, thermique et interconnexion." />
+  <meta property="og:url" content="https://0x0800.com/article-deepseek-v4-dual-spark.html" />
   <meta property="og:site_name" content="0x0800 SRL" />
   <meta property="og:image" content="https://0x0800.com/logo.png" />
   <meta property="og:locale" content="fr_BE" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Servir Laguna S 2.1 NVFP4 sur un DGX Spark (GB10) : le runbook" />
-  <meta name="twitter:description" content="Runbook vLLM pour servir Laguna S 2.1 NVFP4 sur un seul DGX Spark GB10 : hygiène mémoire, contexte 256K, décodage spéculatif DFlash, benchmarks." />
+  <meta name="twitter:title" content="DeepSeek-V4-Flash sur deux DGX Spark : les mesures" />
+  <meta name="twitter:description" content="95 % de code juste sur 100 tirages, 105 tok/s agrégés, 878 k tokens de cache KV, aucun bridage thermique. Mesures du 1er août 2026, reproductibles." />
   <meta name="twitter:image" content="https://0x0800.com/logo.png" />
 
   <link rel="icon" type="image/png" href="/logo.png" />
@@ -38,17 +38,18 @@
   {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": "Servir Laguna S 2.1 NVFP4 sur un seul DGX Spark (GB10) : le runbook complet",
-    "description": "Runbook vLLM pour servir Laguna S 2.1 NVFP4 (117 Md, MoE) sur un seul DGX Spark GB10 : éviter l'OOM au JIT, contexte 256K, décodage spéculatif DFlash, benchmarks de débit détaillés.",
+    "headline": "DeepSeek-V4-Flash sur deux DGX Spark : les mesures",
+    "description": "Mesures complètes de DeepSeek-V4-Flash sur deux DGX Spark GB10 : 95 % de code juste jugé par exécution sur 100 tirages, 105 tok/s agrégés, 878 k tokens de cache KV, thermique sans bridage et latence RDMA à 1,86 µs.",
+    "datePublished": "2026-08-01",
+    "dateModified": "2026-08-03",
     "author": { "@type": "Person", "name": "Denis Leclercq", "url": "https://0x0800.com" },
     "publisher": { "@type": "Organization", "name": "0x0800 SRL", "logo": { "@type": "ImageObject", "url": "https://0x0800.com/logo.png" } },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://0x0800.com/article-laguna-s21-single-spark.html" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://0x0800.com/article-deepseek-v4-dual-spark.html" },
     "inLanguage": "fr"
   }
   </script>
-  <script type="module" crossorigin src="/assets/articleLagunaS21SingleSpark-DCud_twF.js"></script>
+  <script type="module" crossorigin src="/assets/articleDeepseekV4DualSpark-KlzSeytP.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/Contact-BBqWKa8T.js">
-  <link rel="modulepreload" crossorigin href="/assets/CodeBlock-dXEnQ53u.js">
   <link rel="stylesheet" crossorigin href="/assets/Contact-toTI1-Xs.css">
 </head>
 
