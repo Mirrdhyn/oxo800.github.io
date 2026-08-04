@@ -36,10 +36,17 @@ Pricing is not published. Work is quoted per engagement after an on-site scoping
 
 Measurements published from in-house hardware, reproducible command by command.
 
-- DeepSeek-V4-Flash on two DGX Spark: the measurements (1 August 2026) —
-  https://0x0800.com/article-deepseek-v4-dual-spark.html
-  Code quality judged by execution (95% correct over 100 draws), throughput by content type,
-  session capacity, thermals and RDMA interconnect latency.
+- DeepSeek-V4-Flash-0731 on two DGX Spark: the complete recipe (4 August 2026) —
+  https://0x0800.com/article-dsv4-2x-spark-recette.html
+  End-to-end tensor-parallel setup on two GB10 boxes: RoCE networking, build, checkpoint transfer,
+  launch. Then the measurements: code quality judged by execution (96/100 over 100 draws),
+  throughput by workload, session capacity, thermals and RDMA interconnect latency, plus the
+  traps that each cost an hour.
+- DSv4 on 2x DGX Spark: assembly, measurements, tuning (4 August 2026) —
+  https://0x0800.com/article-dsv4-2x-spark-rapport.html
+  The reproducible companion report: both software paths end to end, the +31 s first-token
+  latency cliff introduced by the b12x MoE backend, the one-knob sweep, and the single-parameter
+  law that caps single-stream throughput. Twelve parameters discarded out of sixteen.
 - Serving Laguna S 2.1 NVFP4 on a single DGX Spark (23 July 2026) —
   https://0x0800.com/article-laguna-s21-single-spark.html
   A 117.6B-parameter MoE on one unified-memory box: memory hygiene, native 256K context,
