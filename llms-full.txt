@@ -1,6 +1,6 @@
 # Denis Leclercq | On-premise infrastructure, cloud, and local AI
 # 0x0800 SRL | BCE: BE1021845609 | Liège, Belgium
-# Contact: contact@0x0800.com | https://0x0800.com
+# Contact: https://0x0800.com/#contact
 
 ## Positioning
 
@@ -25,6 +25,10 @@ Not published. Work is quoted per engagement after an on-site scoping day. Price
 
 Benchmarks are run on in-house hardware and released with their method, their commands verbatim, and their caveats. What was not verified is stated as such.
 
+- A private AI on a EUR 1,900 card: what the Intel Arc Pro B70 changes for regulated professions (23 October 2026) — https://0x0800.com/article-ia-locale-b70-metiers.html
+  For accounting firms, notaries, mutual insurers and HR departments bound by professional secrecy and GDPR: Qwen3.8-27B (4-bit) served on site on an Intel Arc Pro B70 (32 GB, EUR 1,900 excl. VAT, against EUR 5,700 for an RTX 5090 with the same memory). One user: 78-133 tok/s depending on the text, against 53-99 for vLLM v0.31 at its best setting; four users at once: 154-220 against 161-217, a tie. Office case, a ~20-page file asked four questions at once: 7.8 s against 11.7 s (vLLM + MTP4); four different files at once: 54.9 s against 54.5 s, prompt reading dominates. Every concurrent answer equals the same request served alone, token for token; vLLM matches in 27 of 48 replies with MTP4 and 16 of 48 without drafts.
+- TensorFold on the Intel Arc Pro B70: from a Python port to a Zig engine (23 October 2026) — https://0x0800.com/article-tensorfold-xe2-b70.html
+  TensorFold (Apache-2.0, by Ash Hart) served only Apple Silicon and NVIDIA. First port: Python over torch.xpu, keeping drafted == serial, resumed == fresh and concurrent == solo exact despite an int4 GEMM whose bits depend on the row count (calls padded to 16 rows, fixed block classes, a position-anchored grid). Second port: the Zig native engine over Level Zero, OpenCL C kernels and nGEN-generated DPAS GEMMs, no PyTorch. Zig figures (GPTQ g128, 230 W): prefill 1,975 tok/s at 1k, single stream 122.9 tok/s code / 99.3 chat with DFlash2, 64/64 exactness cells over 1-8 streams. Against llama.cpp SYCL Q4_0 on the same card: prefill 2,051 vs 788 tok/s at 2k, decode 33.5 vs 27.7 without drafts. Against vLLM v0.31 with the same DFlash2 drafter: ahead single-stream, tied at four streams. Merged upstream as PR #802, shipped in TensorFold 1.0.12 as a build-from-source preview.
 - DeepSeek-V4-Flash-0731 on two DGX Spark: the complete recipe (4 August 2026) — https://0x0800.com/article-dsv4-2x-spark-recette.html
   A 43-layer, 256-expert model on two desktop boxes in tensor-parallel, roughly EUR 8,000 of hardware and 90 W peak for the pair. End-to-end setup: RoCE networking (declare both HCAs, forgetting the second costs 39% of collective bandwidth), venv and build, checkpoint transfer and header verification, launch, warm-up. Code quality judged by execution rather than opinion: 96/100 for the shipped configuration (Python 50/50, Go 46/50), zero truncations, failures always compile errors and never a wrong business test. Single-stream decode 78.55 tok/s on code and 47.16 on prose — prose is the slower case, which is counter-intuitive and reproducible. Context length has no measurable effect on decode step speed between 4k and 131k tokens (sparse attention reads a fixed 512-entry budget); what does cost is prefill, 87 s before the first token at 131k. Raising --max-num-seqs from 2 to 16 is the only tuning that produced a gain: 188.9 tok/s aggregated at sixteen streams with TTFT under 0.8 s, for 4.2% of KV pool. 1,793,656 tokens of KV cache, read from the startup log and not /metrics, which reports a figure twice too low. Prefix caching cuts prefill by a factor of 18 and survives across requests. No thermal or power throttling over 180 samples, 67 °C worst case, 41 W per box. RDMA latency 1.86 µs typical, latency-bound rather than bandwidth-bound.
 - DSv4 on 2x DGX Spark: assembly, measurements, tuning (4 August 2026) — https://0x0800.com/article-dsv4-2x-spark-rapport.html
@@ -81,7 +85,7 @@ These roles were held by Denis Leclercq as an employee or consultant, not as eng
 - Registration: BCE BE1021845609
 - Location: Liège, Belgium
 - Website: https://0x0800.com
-- Email: contact@0x0800.com
+- Contact: https://0x0800.com/#contact
 
 ## Social Links
 
