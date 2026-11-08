@@ -15,7 +15,7 @@ Virtualised estates (Proxmox, OpenStack), networking and BGP routing, high avail
 Scalable and resilient AWS and Azure architectures, migration of on-premise environments to the cloud, infrastructure as code with Terraform and Ansible, CI/CD pipelines with DevSecOps integration, continuous drift detection and compliance evidence.
 
 ### Local AI
-vLLM inference servers and quantised models, the TensorFold engine (Intel Arc Pro XPU backend, upstream contributions: https://github.com/ashhart/TensorFold/pulls?q=is%3Apr+author%3AMirrdhyn), memory/thermal/context sizing, agents connected to internal sources, Hygur local edition deployment, team training and handover. Data stays on the client's hardware, which simplifies the RGPD legal basis (no transfers outside the EU) and makes EU AI Act obligations tractable when addressed early.
+vLLM inference servers and quantised models, the TensorFold engine (Intel Arc Pro XPU backend, merged upstream code: https://github.com/ashhart/TensorFold/commits?author=Mirrdhyn), memory/thermal/context sizing, agents connected to internal sources, Hygur local edition deployment, team training and handover. Data stays on the client's hardware, which simplifies the RGPD legal basis (no transfers outside the EU) and makes EU AI Act obligations tractable when addressed early.
 
 ## Pricing
 
