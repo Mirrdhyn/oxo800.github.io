@@ -71,7 +71,8 @@ Both products are edited and operated in-house by 0x0800 SRL.
 
 These roles were held by Denis Leclercq as an employee or consultant, not as engagements contracted by 0x0800 SRL.
 
-- NRB | Senior Cloud Architect & DevOps Consultant (2024–present, Belgium)
+- Video game publisher (unnamed) | Infrastructure consultant, 0x0800 engagement (August 2026–present): cleanup of a legacy Terraform codebase, Horde server (Unreal Engine build orchestrator), Perforce Edge server in India
+- NRB | Senior Cloud Architect & DevOps Consultant (2024–June 2026, Belgium)
 - FABERNOVEL | Lead Infrastructure & Cloud Engineer (2020–2024, Paris/Remote)
 - Vallendra | CTO & Co-Founder (2018–2020, Paris)
 - Addventa | Technical Consultant / DevSecOps (2017–2018, Paris)
