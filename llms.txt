@@ -37,31 +37,31 @@ Pricing is not published. Work is quoted per engagement after an on-site scoping
 Measurements published from in-house hardware, reproducible command by command.
 
 - A private AI on a EUR 1,900 card: what the Intel Arc Pro B70 changes for regulated professions (23 October 2026) —
-  https://0x0800.com/article-ia-locale-b70-metiers.html
+  https://0x0800.com/blog/ia-locale-b70-metiers/
   A 27B-parameter model on one Intel card, with no document leaving the company: speed against
   vLLM, an office case with four colleagues, and answers an auditor can replay token for token.
 - TensorFold on the Intel Arc Pro B70: from a Python port to a Zig engine (23 October 2026) —
-  https://0x0800.com/article-tensorfold-xe2-b70.html
+  https://0x0800.com/blog/tensorfold-xe2-b70/
   Porting an exact inference engine to Intel Xe2: first Python over torch.xpu, then Zig over Level
   Zero without PyTorch. Qwen3.8-27B at 122.9 tok/s single stream; fair comparison with vLLM
   (MTP4 and DFlash2) and llama.cpp; merged upstream in TensorFold 1.0.12 (PR #802).
 - DeepSeek-V4-Flash-0731 on two DGX Spark: the complete recipe (4 August 2026) —
-  https://0x0800.com/article-dsv4-2x-spark-recette.html
+  https://0x0800.com/blog/dsv4-2x-spark-recette/
   End-to-end tensor-parallel setup on two GB10 boxes: RoCE networking, build, checkpoint transfer,
   launch. Then the measurements: code quality judged by execution (96/100 over 100 draws),
   throughput by workload, session capacity, thermals and RDMA interconnect latency, plus the
   traps that each cost an hour.
 - DSv4 on 2x DGX Spark: assembly, measurements, tuning (4 August 2026) —
-  https://0x0800.com/article-dsv4-2x-spark-rapport.html
+  https://0x0800.com/blog/dsv4-2x-spark-rapport/
   The reproducible companion report: both software paths end to end, the +31 s first-token
   latency cliff introduced by the b12x MoE backend, the one-knob sweep, and the single-parameter
   law that caps single-stream throughput. Twelve parameters discarded out of sixteen.
 - Serving Laguna S 2.1 NVFP4 on a single DGX Spark (23 July 2026) —
-  https://0x0800.com/article-laguna-s21-single-spark.html
+  https://0x0800.com/blog/laguna-s21-single-spark/
   A 117.6B-parameter MoE on one unified-memory box: memory hygiene, native 256K context,
   DFlash speculative decoding, throughput benchmarks.
 - Running vLLM properly on a DGX Spark, GB10 (20 July 2026) —
-  https://0x0800.com/article-dgx-spark-vllm-nvfp4.html
+  https://0x0800.com/blog/dgx-spark-vllm-nvfp4/
   The three bugs that block the build and first server on SM121, and how to fix them.
 
 ## Products

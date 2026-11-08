@@ -1,4 +1,1 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://0x0800.com/sitemap.xml
