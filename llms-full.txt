@@ -69,7 +69,7 @@ Both products are edited and operated in-house by 0x0800 SRL.
 
 ## Professional Experience (founder, before and alongside 0x0800)
 
-These roles were held by Denis Leclercq as an employee or consultant, not as engagements contracted by 0x0800 SRL.
+Apart from the current engagement (first line), these roles were held by Denis Leclercq as an employee or consultant, not as engagements contracted by 0x0800 SRL.
 
 - Video game publisher (unnamed) | Infrastructure consultant, 0x0800 engagement (August 2026–present): cleanup of a legacy Terraform codebase, Horde server (Unreal Engine build orchestrator), Perforce Edge server in India
 - NRB | Senior Cloud Architect & DevOps Consultant (2024–June 2026, Belgium)
