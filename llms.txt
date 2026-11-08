@@ -35,6 +35,7 @@ Pricing is not published. Work is quoted per engagement after an on-site scoping
 ## Articles
 
 Measurements published from in-house hardware, reproducible command by command.
+Each article also exists as raw Markdown: append index.md to its URL (e.g. https://0x0800.com/blog/laguna-s21-single-spark/index.md). French versions live under /fr/blog/.
 
 - A private AI on a EUR 1,900 card: what the Intel Arc Pro B70 changes for regulated professions (23 October 2026) —
   https://0x0800.com/blog/ia-locale-b70-metiers/
